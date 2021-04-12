@@ -1,0 +1,65 @@
+@import '../variables/colores';
+@import'../variables/pantallas';
+
+/*------------Foooter--------------*/
+
+footer {
+    margin: 20px;
+}
+
+#facelogofoot,
+#iglogofoot,
+#spotifyfoot {
+    width: 1.5rem;
+    padding-top: 0.5rem;
+
+    @media (min-width:$computer) {
+        display: block;
+
+
+    }
+}
+
+.navEspacio {
+    padding: 0;
+
+}
+
+.footericons {
+    text-align: right;
+
+    @media(max-width:$phone) {
+        text-align: left;
+        padding: 1rem;
+    }
+
+    @media(min-width:$computer) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        align-content: space-around;
+    }
+
+}
+
+.footerTime {
+    p {
+        font-weight: lighter;
+        font-size: 0.85rem;
+
+    }
+
+}
+
+.copyright{
+    p, a{
+        margin: 0 auto;
+        font-weight: lighter;
+        font-size: 0.75rem;
+        text-align: center;
+        
+    }
+    
+   
+
+}

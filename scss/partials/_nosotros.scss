@@ -1,0 +1,31 @@
+@import '../variables/colores';
+/*--------------- Nosotros---------------/*/
+#nosotros {
+	background-color: #1b1b1b;
+	h3{
+		color:nth($color,2);
+		margin-top: 30px;
+		text-align: center;
+		margin:4rem 0;
+	}
+
+}
+.sectionTittle {
+	text-align: center;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	padding: 2.5rem;
+	color: whitesmoke;
+
+	@media(max-width: $phone){
+		font-size: 1.25rem;
+	}
+}
+.presentacion{
+	p{
+		font-weight: 300;
+		text-align: center;
+
+}
+
+}

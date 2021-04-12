@@ -1,0 +1,97 @@
+@import '../variables/colores';
+@import'../variables/pantallas';
+/*------------- Menu en Landing-----------*/
+
+#menu {
+	h3 {
+		text-align: center;
+		font-size: 1.5rem;
+		color: #984b43;
+
+
+	}
+
+}
+
+.entrada-main,
+.principales-main,
+.bebida-main {
+
+	width: 28%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+
+	@media(max-width: $phone) {
+		width: 100%;
+	}
+
+	@media(min-width:$phone)and(max-width:$tablet) {
+		width: 100%;
+	}
+
+	@media(min-width:$tablet)and(max-width:$computer) {
+		width: 100% !important;
+	}
+
+}
+
+.fotoEntrada,
+.fotoPrincipales,
+.fotoBebida {
+	width: 90%;
+	transition: all 1s;
+
+	&:hover {
+		transform: scale(1.10);
+
+	}
+
+	@media(max-width:$phone) {
+		display: flex;
+		justify-content: center;
+
+		&:hover {
+			transform: unset;
+		}
+
+	}
+
+	@media(min-width:$phone)and(max-width:$tablet) {
+		&:hover {
+			transform: unset;
+		}
+	}
+
+}
+
+.columnasMenu {
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+
+	@media(max-width: $phone) {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	@media(min-width:$phone)and(max-width:$tablet){
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	
+
+
+	h4 {
+		padding-top: 2rem;
+		color: nth($color, 2);
+	}
+
+	p {
+		margin: 0 5px;
+	}
+}

@@ -1,0 +1,93 @@
+@import '../variables/colores';
+/*------------- Inicio----------------*/
+
+
+.navbar-nav{
+	a{
+		color: nth($color,2) !important;
+		&:hover{
+			color: nth($color,5) !important;
+		}
+	}
+	
+}
+
+#inicio {
+	background-color: #1b1b1b;
+}
+
+.principalmail{
+	width: 100%;
+	height: 100vh;
+}
+.bigTittle {
+	font-family: 'Krona One', sans-serif;
+	font-size: 6em;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 0 300px 0;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	
+	
+	
+
+	@media(max-width: $phone){
+		position: unset;
+		margin-bottom: 15rem;
+	}
+	@media(min-width: $phone)and(max-width:$tablet){
+		position: unset;
+		margin: 5rem auto;}
+	@media(min-width: $tablet)and(max-width:$computer){
+		margin: 0 0 120px 0;
+}
+
+	
+ }
+.slogan {
+	font-size: 3em;
+	font-style: italic;
+	text-align: right;
+	color: blanchedalmond;
+	text-shadow:black 0.1em 0.1em 0.2em;
+
+	margin-bottom: 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: flex-end;
+
+
+		
+}
+.barfondo {
+	width: 100%;
+	height: 85%;
+	position: absolute;
+	opacity: 0.5;
+	z-index: -1;
+	@media(max-width: $phone){
+		display: none;
+	}
+	@media(min-width: $phone)and(max-width:$tablet){
+		display: none;
+	}
+	
+}
+.slidedown {
+	a {
+		margin: auto;
+		margin-bottom: 5rem ;
+		color: #f5f5f5;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		width: 15%;
+		height: 2rem;
+		background-color:rgba($color: #233237, $alpha: 0.5);
+		border-radius: 8px;
+		}
+}

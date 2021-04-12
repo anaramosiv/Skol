@@ -1,0 +1,46 @@
+@import '../variables/colores';
+@import '../variables/pantallas';
+/*-------------Estilos Generales------------*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 16px;
+	background-color: #1b1b1b;
+	@media (max-width: $phone) {
+		font-size: 10px;
+		
+	}
+}
+a {
+	text-decoration: none;
+	font-weight: bold;
+	font-family: 'Exo', sans-serif;
+	color: nth($color, 2);
+
+	&:hover{
+		color: nth($color,5);
+	}
+}
+h2 {
+	font-family: 'Exo', sans-serif;
+	font-size: 1.75rem;
+	@media (max-width: $phone) {
+		font-size: 1.25rem;
+		
+	}
+}
+p {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 1em;
+	color: #f5f5f5;
+}
+h3 {
+	font-family: 'Exo', sans-serif;
+	font-size: 1.25rem;
+}
+ul {
+	list-style: none;
+}

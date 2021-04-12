@@ -1,0 +1,15 @@
+@import 'colores';
+%cajasdecontacto{
+    width: 15%;
+	height: 50vh;
+	background-color: nth($color,1);
+    border: 8px solid nth($color,3);
+    border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+    padding: 2rem 0;
+}
