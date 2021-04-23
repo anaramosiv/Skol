@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anaramosiv/projectch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/anaramosiv/projectch/issues"
+  },
+  "homepage": "https://github.com/anaramosiv/projectch#readme",
   "description": ""
 }
