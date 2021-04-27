@@ -272,6 +272,7 @@ ul {
 #eventos {
   color: blanchedalmond;
   background-color: #18121e;
+  padding-bottom: 5%;
 }
 #eventos h3 {
   text-align: center;
@@ -344,6 +345,7 @@ textarea {
 /*------------------ Contacto-----------------*/
 #contacto {
   background-color: #1b1b1b;
+  padding: 5%;
 }
 
 .contacta {
@@ -483,7 +485,7 @@ footer {
 @media (min-width: 992px) {
   .footericons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
     align-content: space-around;
   }
