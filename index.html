@@ -22,7 +22,7 @@
 
 
     <!-- Google fonts -->
-    <link <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400&family=Krona+One&family=Merriweather+Sans:ital,wght@0,300;0,400;1,300&display=swap"
         rel="stylesheet">
@@ -42,46 +42,40 @@
 
 <body>
     <!-- Primera seccion landing -->
-    <header id=inicio>
+    <section class="inicioContainer">
+        <header id=inicio>
 
 
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html#inicio">
-                    <img src="imagenes/LOGOSKOL_WHITE.png" alt="Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#nosotros">Nosotros</a>
-                        <a class="nav-link" href="#menu">Menú</a>
-                        <a class="nav-link" href="#eventos">Eventos</a>
-                        <a class="nav-link" href="#contacto">Contacto</a>
-
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html#inicio">
+                        <img src="imagenes/LOGOSKOL_WHITE.png" alt="Logo">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#nosotros">Nosotros</a>
+                            <a class="nav-link" href="#menu">Menú</a>
+                            <a class="nav-link" href="#eventos">Eventos</a>
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <main class="principalMain">
-        <img class="barfondo" src="imagenes/decoracionbar.jpg" alt="Fondo bar">
-        <h1 class="bigTittle">Vení a Sköl Bar </h1>
-        <h2 class="slogan"> Y viví la mejor experiencia gastronomica.</h2>
-        <div class="slidedown">
-            <a href="#nosotros">Conocenos</a>
-        </div>
-    </main>
-    <!-- Segundda seccion -->
+            </nav>
+        </header>
+        <main>
+            <h1 class="bigTittle">Vení a Sköl Bar </h1>
+            <h2 class="slogan"> Y viví la mejor experiencia gastronomica.</h2>
+        </main>
+    </section>
+    <!--  ------------- Seccion NOSOTROS------------- -->
     <section id="nosotros">
-
         <h2 class="sectionTittle">Somos tus nuevos aliados en las noches de Buenos Aires</h2>
-
-
         <div class="container presentacion">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-6">
@@ -97,10 +91,12 @@
                                 <img src="imagenes/amigosbar.jpg" class="d-block w-100" alt="Amigos Celebrando">
                             </div>
                             <div class="carousel-item">
-                                <img src="imagenes/happy-friends-eating-tapas.jpg" class="d-block w-100" alt="variedad de tapas en la mesa">
-                            </div>                          
+                                <img src="imagenes/happy-friends-eating-tapas.jpg" class="d-block w-100"
+                                    alt="variedad de tapas en la mesa">
+                            </div>
                             <div class="carousel-item">
-                                <img src="imagenes/close-up-of-young-friends-enjoying-evening-drinks-at-nightclub.jpg" class="d-block w-100" alt="Varios amigos celebrando">
+                                <img src="imagenes/close-up-of-young-friends-enjoying-evening-drinks-at-nightclub.jpg"
+                                    class="d-block w-100" alt="Varios amigos celebrando">
                             </div>
                             <div class="carousel-item">
                                 <img src="imagenes/handsome-bartender-making-drinking-and-cocktails-at-counter.jpg"
@@ -118,7 +114,6 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6">
                     <p>Somos un grupo de amigos dedicados a la fabricación de cerveza que decidimos juntarnos y crear un
@@ -133,21 +128,15 @@
                         lista para refrescar tu dia, con bebidas sin alcohol, cervezas de fabricación propia y tragos
                         que no podrás creer.</p>
                 </div>
-
             </div>
-
         </div>
-
         <h3>Te esperamos para que celebremos juntos y <strong>¡SKOL!</strong></h3>
-
     </section>
 
-
+    <!-- Sección MENU -->
     <section id="menu">
         <h2 class="sectionTittle">Proba las opciones de nuestro menu</h2>
         <h3>Hay para todos los gustos</h3>
-
-
         <div class="columnasMenu">
             <div class="entrada-main">
                 <img class="fotoEntrada" src="imagenes/entrada2.png" alt="Entradas">
@@ -156,7 +145,6 @@
                     tu refrescante bebida, scroleas tus redes o te pones al dia con tus amigos. Prgunta por los
                     especiales del día
                 </p>
-
                 <a href="pages/Menu.html#entradas" target="blank"> Ver mas</a>
             </div>
             <div class="principales-main">
@@ -165,7 +153,6 @@
                 <p>Hamurguesas, pizzas, sandwiches y algo mas, con la sazon y el cariño especial de nuestra chef y
                     recetas originales que te van a encantar. Podes pedir para disfutar en nuestro salon o para llevar.
                 </p>
-
                 <a href="pages/Menu.html#principales" target="blank"> Ver mas</a>
             </div>
             <div class="bebida-main">
@@ -175,30 +162,22 @@
                     nuestra propia producción realizada con mucha paciencia y cuidado para darte la cantidad justa de
                     espuma, sabor y consistencia.
                 </p>
-
                 <a href="pages/Menu.html#bebidas" target="blank"> Ver mas</a>
             </div>
         </div>
-
-
     </section>
-
+    <!-- --------- Seccion EVENTOS----------- -->
     <section id="eventos">
         <h2 class="sectionTittle">
             Tenemos el espacio para que tus eventos sean inolvidables
         </h2>
         <div class="maintextarea">
-
             <h3>Lo mejor? Si te copa, nos hacemos cargo de todo, hasta las velitas!</h3>
-
             <p>Contamos con un salon y una terraza en la planta alta con todas las comodidades para que tu grupo la pase
                 bien, podes decorar a tu gusto, o contactar con algunos de nuestros aliados para que hagan posible tu
                 idea. </p>
             <p>Además, según la cantidad de invitados podés acceder a un descuento en el total de la cuenta. </p>
             <p> Escribi en el formulario que tenés abajo toda la información necesaria y nos comunicaremos contigo.</p>
-
-
-
         </div>
         <div class="container">
             <div class="row">
@@ -224,7 +203,7 @@
                             </div>
                             <div class="carousel-item">
                                 <img src="imagenes/celebrando-terraza.jpg" class="d-block w-100"
-                                    alt="decoración del Bar">
+                                    alt="gente en la terraza">
                             </div>
                             <div class="carousel-item">
                                 <img src="imagenes/blurred-people-with-sparklers.jpg" class="d-block w-100"
@@ -237,8 +216,6 @@
                             <div class="carousel-item">
                                 <img src="imagenes/decoracionbar.jpg" class="d-block w-100" alt="decoración del Bar">
                             </div>
-
-
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1"
                             data-bs-slide="prev">
@@ -251,19 +228,14 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 formularioevent">
-
                     <form action="/server/" method="POST" class="form2items">
                         <div class="form-row">
                             <label for="nombre">Nombre:</label>
                             <input type="text" name="nombre" id="nombre">
-
-
                             <label for="email">Email: </label>
                             <input type="email" id="email" placeholder="inserta@email.com">
-
                             <fieldset>
                                 <legend>Ubicación</legend>
                                 <input type="radio" id="terraza" name="opcionterraza">
@@ -271,7 +243,6 @@
                                 <input type="radio" id="interior" name="opcioninterior">
                                 <label for="interior">Interior</label>
                             </fieldset>
-
                             <label for="invitados">Cantidad de invitados</label>
                             <select name="invitados" id="invitados">
                                 <option value="1">1</option>
@@ -285,8 +256,6 @@
                                 <option value="9">9</option>
                                 <option value="10">10</option>
                                 <option value="10plus">+ de 10</option>
-
-
                             </select>
                             <br>
                             <label for="comentarios">Contanos todo lo necesario para tu evento</label>
@@ -294,55 +263,33 @@
                             </textarea>
                             <div>
                                 <button type="submit">Enviar</button>
-
                             </div>
-
-
-
                         </div>
-
-
                     </form>
-
-
                 </div>
             </div>
-
-
-
-
         </div>
-
+        <!-- -----------Sección CONTACTO---------------->
     </section>
-
     <section id="contacto">
-
         <div class="contacta">
             <h2>Contacta con nosotros</h2>
         </div>
-
         <div class="todasCajas">
-
             <div class="maps">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.940075584334!2d-58.43110358518134!3d-34.60567678045902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca6f59e09fb7%3A0xdaff20eed00e99d3!2sYatay%20525%2C%20C1184ADI%20CABA!5e0!3m2!1ses-419!2sar!4v1616620223396!5m2!1ses-419!2sar"
                     width="400" height="340" allowfullscreen="" loading="lazy"></iframe>
-
             </div>
-
             <div class="cajaDire">
                 <div class="direccion">
                     <img id="logotelefono" src="imagenes/location.svg" alt="Dirección">
                     <p class="textocajas">Yatay 525, Almagro, CABA</p>
-
                 </div>
                 <div class="elementMail">
                     <img id="logomail" src="imagenes/mail.svg" alt="Mail">
                     <a href="mailto:nomandesmail@skol.com" target="blank">nuevobar@skol.com</a>
                 </div>
-
-
-
             </div>
             <div class="cajaTelefonos">
                 <div class="cajatelefono">
@@ -355,8 +302,6 @@
                 </div>
             </div>
             <div class="cajaRedes">
-
-
                 <div>
                     <a href="http://www.facebook.com" target="blank">
                         <img id="facelogo" src="imagenes/facebook.svg" alt="Facebook">
@@ -373,74 +318,45 @@
                     </a>
                 </div>
             </div>
-
-
     </section>
-
 
     <footer>
         <div class="row footer">
             <div class="col-sm-12 col-md-3 col-lg-2">
-
                 <img src="imagenes/LOGOSKOL_WHITE.png" alt="Logo">
                 <p>Yatay525, Almagro CABA</p>
-
-
             </div>
             <div class="col-sm-12 col-md-3 col-lg-4">
-
-
                 <nav class="nav flex-column">
                     <a class="nav-link navEspacio" href="#inicio">Inicio</a>
                     <a class="nav-link navEspacio" href="#nosotros">Nosotros</a>
                     <a class="nav-link navEspacio" href="pages/Menu.html" target="_blank">Menú Completo</a>
                     <a class="nav-link navEspacio" href="#eventos">Eventos</a>
-
                 </nav>
-
             </div>
             <div class="col-sm-12 col-md-3 col-lg-2 footerspace">
             </div>
-
             <div class="col-sm-12 col-md-3 col-lg-3 footerTime">
                 <p>Horario de atención</p>
                 <p>Miercoles a Domingos de 20:00 a 01:00</p>
                 <p>Lunes y Martes Cerrados</p>
             </div>
-
-
             <div class="col-sm-12 col-md-3 col-lg-1 footericons">
-
-
                 <a href="http://www.facebook.com" target="blank">
                     <img id="facelogofoot" src="imagenes/facebook.svg" alt="Facebook">
                 </a>
-
-
                 <a href="http://open.spotify.com" target="blank">
                     <img id="spotifyfoot" src="imagenes/spotify.svg" alt="Spotify">
                 </a>
-
-
                 <a href="http://www.instagram.com" target="blank">
                     <img id="iglogofoot" src="imagenes/instagram.svg" alt="instagram">
                 </a>
-
             </div>
-
-
         </div>
-
         <div class="copyright">
             <p>Copyright todos los derechos reservados 2021 OndaWeb by AK</p>
-
             <a href="#">Terminos de privacidad</a>
-
-
         </div>
-
-
-
     </footer>
 
 
