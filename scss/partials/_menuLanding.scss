@@ -22,9 +22,11 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	align-items: center;
 
 	@media(max-width: $phone) {
 		width: 100%;
+		padding: 1.5rem;
 	}
 
 	@media(min-width:$phone)and(max-width:$tablet) {
@@ -54,6 +56,8 @@
 
 		&:hover {
 			transform: unset;
+			filter: opacity(.5);
+			border: #eac67a 0.5rem solid;
 		}
 
 	}

@@ -88,7 +88,7 @@ ul {
 @media (max-width: 576px) {
   .bigTittle {
     position: unset;
-    margin-bottom: 15rem;
+    margin-bottom: 1.5rem;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -160,12 +160,14 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 @media (max-width: 576px) {
   .entrada-main,
 .principales-main,
 .bebida-main {
     width: 100%;
+    padding: 1.5rem;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -205,6 +207,8 @@ ul {
 .fotoPrincipales:hover,
 .fotoBebida:hover {
     transform: unset;
+    filter: opacity(0.5);
+    border: #eac67a 0.5rem solid;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -267,6 +271,7 @@ ul {
 .formularioevent {
   color: whitesmoke;
   margin-top: 20px;
+  align-items: center;
 }
 .formularioevent input[type=text] {
   display: block;
