@@ -21,10 +21,21 @@
 .formularioevent {
 	color: nth($color,2);
 	margin-top: 20px;
+	display: flex;
 	align-items: center;
+	
+	.elementosForm{
+		margin: 0 auto;
+		display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	align-content: center;;
+	}
+
 	input[type="text"]
 	{
-		display: block;
+	display: block;
 	  background-color: nth($color,4);
 	  border: 1px solid darkgray;
 	   border-radius: 3px;
@@ -46,15 +57,16 @@
 		}
 	}
 
-   
-
-
-
-	 label#comentarios {
+   	 label#comentarios {
 		width: 100%;
 	 }
 	 textarea {
+		color: blanchedalmond;
 	 	width: 80%;
 		resize: none;
 		background-color: nth($color,4);
 	 }
+	 fieldset{
+		text-align: center;
+	 }
+	

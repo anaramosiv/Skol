@@ -53,11 +53,12 @@
 	@media(max-width:$phone) {
 		display: flex;
 		justify-content: center;
+	
 
 		&:hover {
 			transform: unset;
-			filter: opacity(.5);
-			border: #eac67a 0.5rem solid;
+			transition: all 0.5s;
+			border: #eac67a 2px solid;
 		}
 
 	}
@@ -65,6 +66,8 @@
 	@media(min-width:$phone)and(max-width:$tablet) {
 		&:hover {
 			transform: unset;
+			transition: all 0.5s;
+			border: #eac67a 2px solid;
 		}
 	}
 
@@ -97,5 +100,7 @@
 
 	p {
 		margin: 0 5px;
+		font-weight: lighter;
+
 	}
 }

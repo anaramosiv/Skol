@@ -44,9 +44,7 @@
     <!-- Primera seccion landing -->
     <section class="inicioContainer">
         <header id=inicio>
-
-
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="index.html#inicio">
                         <img src="imagenes/LOGOSKOL_WHITE.png" alt="Logo">
@@ -71,6 +69,13 @@
         <main>
             <h1 class="bigTittle">Vení a Sköl Bar </h1>
             <h2 class="slogan"> Y viví la mejor experiencia gastronomica.</h2>
+
+
+            <div class="arrow">
+                <a class="arrowshake"href="index.html#nosotros">
+                    <img src="imagenes/arrow.svg" alt="Logo">
+                </a>
+            </div>
         </main>
     </section>
     <!--  ------------- Seccion NOSOTROS------------- -->
@@ -130,7 +135,7 @@
                 </div>
             </div>
         </div>
-        <h3>Te esperamos para que celebremos juntos y <strong>¡SKOL!</strong></h3>
+        <h3 class="nosotrosbottom">Te esperamos para que celebremos juntos y <strong>¡SKOL!</strong></h3>
     </section>
 
     <!-- Sección MENU -->
@@ -159,7 +164,7 @@
                 <img class="fotoBebida" src="imagenes/Bebida.jpg" alt="Bebidas">
                 <h4>Bebidas</h4>
                 <p>Con o sin alcohol, tenemos opciones frutales, gaseosas, tragos de autor y cerveza de
-                    nuestra propia producción realizada con mucha paciencia y cuidado para darte la cantidad justa de
+                    nuestra propia producción hecha con mucho cuidado para darte la cantidad justa de
                     espuma, sabor y consistencia.
                 </p>
                 <a href="pages/Menu.html#bebidas" target="blank"> Ver mas</a>
@@ -230,42 +235,44 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 formularioevent">
-                    <form action="/server/" method="POST" class="form2items">
-                        <div class="form-row">
-                            <label for="nombre">Nombre:</label>
-                            <input type="text" name="nombre" id="nombre">
-                            <label for="email">Email: </label>
-                            <input type="email" id="email" placeholder="inserta@email.com">
-                            <fieldset>
-                                <legend>Ubicación</legend>
-                                <input type="radio" id="terraza" name="opcionterraza">
-                                <label for="terraza">Terraza</label>
-                                <input type="radio" id="interior" name="opcioninterior">
-                                <label for="interior">Interior</label>
-                            </fieldset>
-                            <label for="invitados">Cantidad de invitados</label>
-                            <select name="invitados" id="invitados">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="10plus">+ de 10</option>
-                            </select>
-                            <br>
-                            <label for="comentarios">Contanos todo lo necesario para tu evento</label>
-                            <textarea name="cajadetexto" id="comentarios" cols="25" rows="3" maxlength="600">
-                            </textarea>
-                            <div>
-                                <button type="submit">Enviar</button>
+                    <div class="container formElements">
+                        <form action="/server/" method="POST" class="form2items">
+                            <div class="form-row elementosForm">
+                                <label class="elementosForm" for="nombre">Nombre:</label>
+                                <input type="text" name="nombre" id="nombre">
+                                <label class="elementosForm" for="email">Email: </label>
+                                <input type="email" id="email" placeholder="inserta@email.com">
+                                <fieldset>
+                                    <legend class="elementosForm">Ubicación</legend>
+                                    <input type="radio" id="terraza" name="opciones">
+                                    <label for="terraza">Terraza</label>
+                                    <input type="radio" id="interior" name="opciones">
+                                    <label for="interior">Interior</label>
+                                </fieldset>
+                                <label for="invitados">Cantidad de invitados</label>
+                                <select name="invitados" id="invitados">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="10plus">+ de 10</option>
+                                </select>
+                                <br>
+                                <label for="comentarios">Contanos todo lo necesario para tu evento</label>
+                                <textarea name="cajadetexto" id="comentarios" cols="25" rows="3" maxlength="600">
+                                </textarea>
+                                <div>
+                                    <button type="submit">Enviar</button>
+                                </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

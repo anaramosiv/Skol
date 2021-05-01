@@ -59,18 +59,19 @@ ul {
 }
 
 .inicioContainer {
-  background-image: url(../../imagenes/decoracionbar.png);
+  background-image: url(../imagenes/decoracionbar.png);
   background-size: cover;
-  margin-bottom: 5rem;
+  padding-bottom: 2.6rem;
+  margin-bottom: 4rem;
 }
 @media (max-width: 576px) {
   .inicioContainer {
-    background-image: url(../../imagenes/vikingopac2.png);
+    background-image: url(../imagenes/vikingopac2.png);
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .inicioContainer {
-    background-image: url(../../imagenes/viking-opac.png);
+    background-image: url(../imagenes/viking-opac.png);
   }
 }
 
@@ -79,7 +80,7 @@ ul {
   font-size: 6em;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 0 300px 0;
+  margin: 4rem 0 10rem 0;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -87,44 +88,100 @@ ul {
 }
 @media (max-width: 576px) {
   .bigTittle {
-    position: unset;
-    margin-bottom: 1.5rem;
+    margin: 6rem 0;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
   .bigTittle {
-    position: unset;
-    margin: 5rem auto;
+    margin: 3rem auto;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .bigTittle {
-    margin: 0 0 120px 0;
+    margin: 0 0 6rem 0;
   }
 }
 
 .slogan {
-  font-size: 3em;
+  font-size: 2rem;
   font-style: italic;
-  text-align: right;
+  text-align: center;
   color: blanchedalmond;
-  text-shadow: black 0.1em 0.1em 0.2em;
+  text-shadow: black 0.1rem 0.1rem 0.2em;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-end;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
+}
+
+.arrow {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.arrow .arrowshake:hover {
+  animation: shake 1.2s;
+  animation-iteration-count: 3;
+}
+@keyframes shake {
+  0% {
+    transform: translate(0, 1px);
+  }
+  10% {
+    transform: translate(0, -2px);
+  }
+  20% {
+    transform: translate(0, 0px);
+  }
+  30% {
+    transform: translate(0, 2px);
+  }
+  40% {
+    transform: translate(0, -1px);
+  }
+  50% {
+    transform: translate(0, 2px);
+  }
+  60% {
+    transform: translate(0, 1px);
+  }
+  70% {
+    transform: translate(0, 1px);
+  }
+  80% {
+    transform: translate(0, -1px);
+  }
+  90% {
+    transform: translate(0, 2px);
+  }
+  100% {
+    transform: translate(0, -2px);
+  }
+}
+@media (max-width: 576px) {
+  .arrow {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .arrow {
+    display: none;
+  }
 }
 
 /*--------------- Nosotros---------------/*/
 #nosotros {
   background-color: #1b1b1b;
+  padding: 2rem 0 0 0;
 }
 #nosotros h3 {
   color: whitesmoke;
-  margin-top: 30px;
   text-align: center;
-  margin: 4rem 0;
+  margin: 2rem 0;
+  padding-bottom: 2rem;
 }
 
 .sectionTittle {
@@ -207,8 +264,8 @@ ul {
 .fotoPrincipales:hover,
 .fotoBebida:hover {
     transform: unset;
-    filter: opacity(0.5);
-    border: #eac67a 0.5rem solid;
+    transition: all 0.5s;
+    border: #eac67a 2px solid;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -216,6 +273,8 @@ ul {
 .fotoPrincipales:hover,
 .fotoBebida:hover {
     transform: unset;
+    transition: all 0.5s;
+    border: #eac67a 2px solid;
   }
 }
 
@@ -246,6 +305,7 @@ ul {
 }
 .columnasMenu p {
   margin: 0 5px;
+  font-weight: lighter;
 }
 
 /*------------------Eventos----------------*/
@@ -271,7 +331,16 @@ ul {
 .formularioevent {
   color: whitesmoke;
   margin-top: 20px;
+  display: flex;
   align-items: center;
+}
+.formularioevent .elementosForm {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  align-content: center;
 }
 .formularioevent input[type=text] {
   display: block;
@@ -301,9 +370,14 @@ label#comentarios {
 }
 
 textarea {
+  color: blanchedalmond;
   width: 80%;
   resize: none;
   background-color: #18121e;
+}
+
+fieldset {
+  text-align: center;
 }
 
 .cajaRedes,
@@ -365,6 +439,16 @@ textarea {
     align-content: center;
   }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .todasCajas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+  }
+}
 
 iframe {
   height: 50vh;
@@ -399,6 +483,19 @@ iframe {
 .cajaTelefonos,
 .cajaDire {
     width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: stretch;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .cajaRedes,
+.cajaTelefonos,
+.cajaDire {
+    width: 40%;
   }
 }
 

@@ -1,12 +1,13 @@
 @import '../variables/colores';
 /*--------------- Nosotros---------------/*/
 #nosotros {
-	background-color: #1b1b1b;
+	background-color: nth($color, 1);
+	padding: 2rem 0 0 0;
 	h3{
 		color:nth($color,2);
-		margin-top: 30px;
 		text-align: center;
-		margin:4rem 0;
+		margin: 2rem 0;
+		padding-bottom: 2rem;
 	}
 
 }

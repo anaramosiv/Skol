@@ -44,10 +44,24 @@
 		flex-direction: column;
 		flex-wrap: wrap;
 		justify-content: center;
-		
 		align-content: center;
 	}
-}
+	@media(min-width: $tablet)and(max-width:$computer)
+	{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		align-content: space-around;
+	}
+		
+		
+
+	}
+	
+
+
 
 iframe {
 
@@ -92,13 +106,30 @@ iframe {
 	}
 
 	@media(min-width: $phone)and(max-width:$tablet) {
+
 		width: 60%;
-				
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+		align-content: stretch;
+						
+	}
+	@media(min-width: $tablet)and(max-width:$computer)
+	{
+		width: 40%;
+		
+		
 
 	}
 
-
 }
+	
+
+
+
+
 
 #facelogo,
 #iglogo,
