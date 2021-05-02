@@ -16,11 +16,14 @@
 .inicioContainer{
 	background-image: url(../imagenes/decoracionbar.png);
 	background-size: cover;
+
 	padding-bottom: 2.6rem;
 	margin-bottom: 4rem;
 	
 	@media(max-width: $phone){
 		background-image: url(../imagenes/vikingopac2.png);
+		background-size: cover;
+		padding-bottom: 12rem;
 	}
 	@media(min-width: $phone)and(max-width:$tablet){
 		background-image: url(../imagenes/viking-opac.png);

@@ -67,6 +67,8 @@ ul {
 @media (max-width: 576px) {
   .inicioContainer {
     background-image: url(../imagenes/vikingopac2.png);
+    background-size: cover;
+    padding-bottom: 12rem;
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -457,10 +459,24 @@ iframe {
 }
 @media (max-width: 576px) {
   iframe {
+    width: 100%;
     border: 2px solid #233237;
   }
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  iframe {
+    width: 92%;
+  }
+}
 
+.cajaRedes a,
+.cajaRedes p,
+.cajaTelefonos a,
+.cajaTelefonos p,
+.cajaDire a,
+.cajaDire p {
+  font-size: 0.75rem;
+}
 @media (max-width: 576px) {
   .cajaRedes,
 .cajaTelefonos,
@@ -488,7 +504,6 @@ iframe {
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
-    align-content: stretch;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -496,6 +511,11 @@ iframe {
 .cajaTelefonos,
 .cajaDire {
     width: 40%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 
@@ -507,6 +527,29 @@ iframe {
   margin: auto;
   align-content: center;
 }
+@media (max-width: 576px) {
+  #facelogo,
+#iglogo,
+#spotify {
+    width: 15%;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #facelogo,
+#iglogo,
+#spotify {
+    width: 10%;
+    padding: 0.3rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #facelogo,
+#iglogo,
+#spotify {
+    width: 10%;
+    padding: 0.3rem;
+  }
+}
 
 #logomail {
   width: 20%;
@@ -515,17 +558,54 @@ iframe {
   align-content: center;
   justify-content: center;
 }
+@media (max-width: 576px) {
+  #logomail {
+    width: 15%;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #logomail {
+    width: 10%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #logomail {
+    width: 10%;
+  }
+}
 
 .elementMail a {
   text-align: center;
   display: block;
 }
 
+#logolocation,
 #logotelefono,
 #logowhatsapp {
   width: 20%;
   display: flex;
   margin: 0 auto;
+}
+@media (max-width: 576px) {
+  #logolocation,
+#logotelefono,
+#logowhatsapp {
+    width: 15%;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #logolocation,
+#logotelefono,
+#logowhatsapp {
+    width: 10%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #logolocation,
+#logotelefono,
+#logowhatsapp {
+    width: 10%;
+  }
 }
 
 /*------------Foooter--------------*/

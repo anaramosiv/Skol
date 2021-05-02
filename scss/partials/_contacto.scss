@@ -33,7 +33,7 @@
 		display: flex;
 		flex-direction: column;
 		padding-top: 1rem;
-		
+
 
 
 	}
@@ -46,8 +46,8 @@
 		justify-content: center;
 		align-content: center;
 	}
-	@media(min-width: $tablet)and(max-width:$computer)
-	{
+
+	@media(min-width: $tablet)and(max-width:$computer) {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -55,11 +55,11 @@
 		align-items: center;
 		align-content: space-around;
 	}
-		
-		
 
-	}
-	
+
+
+}
+
 
 
 
@@ -70,16 +70,14 @@ iframe {
 	border-radius: 8px;
 
 	@media(max-width: $phone) {
-
+		width: 100%;
 		border: 2px solid nth($color, 3);
+	}
 
-
-
-
-
+	@media(min-width: $tablet)and(max-width:$computer) {
+		width: 92%;
 	}
 }
-
 
 .cajaRedes,
 .cajaTelefonos,
@@ -87,7 +85,12 @@ iframe {
 	@extend %cajasdecontacto;
 
 
-
+	a,
+	p 
+	{
+		font-size: 0.75rem;
+		
+	}
 
 	@media(max-width: $phone) {
 		display: flex;
@@ -103,6 +106,7 @@ iframe {
 		padding: 1rem;
 
 
+
 	}
 
 	@media(min-width: $phone)and(max-width:$tablet) {
@@ -113,23 +117,22 @@ iframe {
 		flex-wrap: nowrap;
 		justify-content: flex-start;
 		align-items: center;
-		align-content: stretch;
-						
-	}
-	@media(min-width: $tablet)and(max-width:$computer)
-	{
-		width: 40%;
-		
-		
+
 
 	}
+
+	@media(min-width: $tablet)and(max-width:$computer) {
+		width: 40%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: center;
+
+	}
+
 
 }
-	
-
-
-
-
 
 #facelogo,
 #iglogo,
@@ -138,6 +141,22 @@ iframe {
 	display: flex;
 	margin: auto;
 	align-content: center;
+
+	@media(max-width: $phone) {
+		width: 15%;
+	}
+
+	@media(min-width: $phone)and(max-width:$tablet) {
+		width: 10%;
+		padding: 0.3rem;
+	}
+
+	@media(min-width: $tablet)and(max-width:$computer) {
+		width: 10%;
+		padding: 0.3rem;
+	}
+
+
 }
 
 #logomail {
@@ -147,6 +166,21 @@ iframe {
 	margin: 0 auto;
 	align-content: center;
 	justify-content: center;
+
+
+	@media(max-width: $phone) {
+		width: 15%;
+	}
+
+	@media(min-width: $phone)and(max-width:$tablet) {
+		width: 10%;
+	}
+
+	@media(min-width: $tablet)and(max-width:$computer) {
+		width: 10%;
+	}
+
+
 
 }
 
@@ -158,10 +192,23 @@ iframe {
 	}
 }
 
-
+#logolocation,
 #logotelefono,
 #logowhatsapp {
 	width: 20%;
 	display: flex;
 	margin: 0 auto;
+
+	@media(max-width: $phone) {
+		width: 15%;
+	}
+
+	@media(min-width: $phone)and(max-width:$tablet) {
+		width: 10%;
+	}
+
+	@media(min-width: $tablet)and(max-width:$computer) {
+		width: 10%;
+	}
+
 }
